@@ -1,0 +1,280 @@
+1
+00:00:00,750 --> 00:00:02,880
+Hi, everyone, welcome to this new video.
+
+2
+00:00:02,910 --> 00:00:08,030
+So in this video, we are going to discuss about the limitations of Dijkstra's algorithm.
+
+3
+00:00:08,490 --> 00:00:09,720
+So what are the limitations?
+
+4
+00:00:09,900 --> 00:00:14,430
+So Dijkstra's algorithm has one limitation, that it does not work for integrity, which.
+
+5
+00:00:17,520 --> 00:00:22,980
+So if your graph contains any negative edge, then it will not work.
+
+6
+00:00:23,430 --> 00:00:24,720
+What do I mean by negative?
+
+7
+00:00:24,990 --> 00:00:27,510
+I mean negative with light.
+
+8
+00:00:27,790 --> 00:00:35,100
+So Dijkstra algorithm only only only works for the positive weight that is positive agist.
+
+9
+00:00:35,550 --> 00:00:41,940
+If your graph contain any one negative, which then does extraordinarily Nordberg, why it will not
+
+10
+00:00:41,940 --> 00:00:42,220
+work.
+
+11
+00:00:42,240 --> 00:00:43,620
+Let's try to find out this.
+
+12
+00:00:44,430 --> 00:00:52,210
+So let's say it is my source Vertex and I want to find out what this stands for BNC from Vertex.
+
+13
+00:00:53,160 --> 00:00:59,100
+So again, what I'm going to do is distance is zero distance infinity, distance infinity.
+
+14
+00:00:59,640 --> 00:01:02,460
+So zero plus three is less than infinity.
+
+15
+00:01:02,700 --> 00:01:07,140
+So I will change it to three zero plus four is less than infinity.
+
+16
+00:01:07,140 --> 00:01:10,550
+So I will change it to four now.
+
+17
+00:01:10,920 --> 00:01:11,940
+Four and three.
+
+18
+00:01:12,780 --> 00:01:13,920
+Which one is minimum.
+
+19
+00:01:14,190 --> 00:01:16,920
+I think four is minimum rate.
+
+20
+00:01:16,920 --> 00:01:21,860
+And also the remark that nobody has been visited nor has been visited.
+
+21
+00:01:22,650 --> 00:01:26,470
+So four and three which one is minimum.
+
+22
+00:01:26,730 --> 00:01:28,380
+So three is minimum, right.
+
+23
+00:01:28,590 --> 00:01:29,350
+Three years minimum.
+
+24
+00:01:29,580 --> 00:01:34,640
+So 40 go to its neighbor so it doesn't have any other neighbor.
+
+25
+00:01:34,890 --> 00:01:35,170
+Right.
+
+26
+00:01:35,310 --> 00:01:36,510
+This is Director Graph.
+
+27
+00:01:36,960 --> 00:01:39,630
+This is one big graph, not bidirectional.
+
+28
+00:01:39,630 --> 00:01:41,450
+These edges are not bidirectional.
+
+29
+00:01:41,460 --> 00:01:42,660
+They are union directional.
+
+30
+00:01:42,870 --> 00:01:46,430
+So B doesn't have any other neighbors.
+
+31
+00:01:46,530 --> 00:01:47,770
+Bill doesn't have any neighbors.
+
+32
+00:01:47,770 --> 00:01:49,070
+So I cannot go anywhere.
+
+33
+00:01:49,350 --> 00:01:51,300
+So this node has been visited.
+
+34
+00:01:52,980 --> 00:01:54,270
+This node has been visited.
+
+35
+00:01:54,570 --> 00:02:02,340
+Now let's talk about this vertex C, so C has one neighbor, which is B, so C has one neighbor, which
+
+36
+00:02:02,340 --> 00:02:04,670
+is B, but B has already been visited.
+
+37
+00:02:05,070 --> 00:02:09,120
+So we will not do anything and C doesn't have any other neighbors.
+
+38
+00:02:09,120 --> 00:02:09,960
+So I am done.
+
+39
+00:02:11,370 --> 00:02:12,260
+So I am done.
+
+40
+00:02:12,990 --> 00:02:15,950
+Now let's see that our answer is correct or not.
+
+41
+00:02:17,130 --> 00:02:21,890
+So C think minimum distance will be four which is correct.
+
+42
+00:02:22,770 --> 00:02:25,650
+I can only reach C with this pot.
+
+43
+00:02:25,650 --> 00:02:27,480
+So minimum distance phone is correct.
+
+44
+00:02:28,110 --> 00:02:31,620
+B using the minimum distance from Vertex is three.
+
+45
+00:02:32,340 --> 00:02:33,420
+But that is wrong.
+
+46
+00:02:34,140 --> 00:02:37,830
+Y because the minimum distance is to vital.
+
+47
+00:02:38,070 --> 00:02:44,160
+If you will come here first four and then if you come here to forward minus two will be two.
+
+48
+00:02:44,820 --> 00:02:49,350
+If you will come B via C then the distance will be two.
+
+49
+00:02:49,680 --> 00:02:57,330
+Ideally the answer should have been two, but Dijkstra is saying the distance is three digits, facing
+
+50
+00:02:57,330 --> 00:02:58,380
+the distance is three.
+
+51
+00:02:59,010 --> 00:03:04,860
+So that's why Dijkstra algorithm gives a wrong answer for negative edges.
+
+52
+00:03:05,130 --> 00:03:12,990
+So if your graph contains any negative, which if your graph contains any negative it, then Dijkstra
+
+53
+00:03:12,990 --> 00:03:14,390
+will give you a wrong answer.
+
+54
+00:03:17,840 --> 00:03:20,520
+Dijkstra will give you a wrong answer.
+
+55
+00:03:21,680 --> 00:03:28,820
+That's delimitation of Dijkstra algorithm and how we can improve this, so what algorithm we can use.
+
+56
+00:03:29,060 --> 00:03:38,720
+So there is one more algorithm, Bellmon for algorithm, so for algorithm works for negative EDG.
+
+57
+00:03:38,720 --> 00:03:46,100
+Also, Bellmon algorithm will work for Negrita, which also so this algorithm is not so much important
+
+58
+00:03:46,100 --> 00:03:49,720
+from university point of view and also from interview point of view.
+
+59
+00:03:49,970 --> 00:03:54,860
+So if you want to read about this algorithm, you can definitely go through this algorithm.
+
+60
+00:03:54,980 --> 00:03:56,450
+Very pretty simple algorithm.
+
+61
+00:03:56,450 --> 00:03:57,950
+You can check this out yourself.
+
+62
+00:03:58,130 --> 00:04:00,260
+And if you face any problem, do let me know.
+
+63
+00:04:00,260 --> 00:04:01,460
+I will make a video of it.
+
+64
+00:04:02,120 --> 00:04:02,560
+Right.
+
+65
+00:04:03,070 --> 00:04:07,730
+So that is the limitation of Dijkstra algorithm, that it will not work for negativities.
+
+66
+00:04:07,760 --> 00:04:09,350
+It will give you the wrong answer.
+
+67
+00:04:09,590 --> 00:04:15,350
+And if you want if the graph contains negative images, you want to find out the right solution, then
+
+68
+00:04:15,350 --> 00:04:17,490
+Bellmon for algorithm is the way to go.
+
+69
+00:04:17,600 --> 00:04:23,160
+So that's pretty much all that I want to cover in this video, so I will meet you in the next one.
+
+70
+00:04:23,480 --> 00:04:24,050
+Thank you.
+
